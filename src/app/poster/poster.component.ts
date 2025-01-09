@@ -24,6 +24,6 @@ export class PosterComponent implements OnInit {
     window.location.href = 'https://wa.me/+353894627216';
   }
   redirectToInstagram(){
-    window.location.href = 'https://www.instagram.com/__.pranavv.___/';
+    window.location.href = 'https://www.instagram.com/__.pranavv.___?igsh=M211cGpoeHpzY2xk&utm_source=qr';
   }
 }
