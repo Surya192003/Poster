@@ -1,0 +1,148 @@
+/* Basic Layout for the poster-container */
+.poster-container {
+    display: flex;
+    flex-direction: column; /* Stack vertically by default (for mobile) */
+    justify-content: center;
+    align-items: center; /* Center content horizontally */
+    padding: 20px;
+    max-width: 1200px; /* Limit the width on larger screens */
+    margin: 0 auto; /* Center the container */
+  }
+  
+  /* Poster Image Styling */
+  .poster-image {
+    width: 100%; /* Full width image on mobile */
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px; /* Add space below the image */
+  }
+  
+  /* Content Container for Dance Classes and Contact Information */
+  .content-container {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column; /* Stack content vertically by default */
+  }
+  
+  /* Dance Section Styling */
+  .dance-section {
+    padding: 20px;
+    background: #f1f1f1;
+    border-radius: 8px;
+    margin-bottom: 20px; /* Space between sections */
+  }
+  
+  .dance-section h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .dance-section p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  /* Contact Info Section */
+  .contact-info {
+    padding: 20px;
+    background: #f1f1f1;
+    border-radius: 8px;
+  }
+  
+  .contact-info h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .contact-info p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  .contact-info a {
+    color: #25d366; /* WhatsApp green */
+    text-decoration: none;
+  }
+  
+  .contact-info a:hover {
+    color: #128c7e; /* Darker WhatsApp green */
+    text-decoration: underline;
+  }
+  
+  /* Social Media Icon Styling */
+  .icon_socialmedia {
+    height: 54px;
+    width: auto;
+    margin-right: 10px; /* Space between icons */
+  }
+  
+  /* Contact Button Styling (Mobile Only) */
+  .contact-button {
+    margin-top: 20px;
+    padding: 12px 20px;
+    background-color: #25d366; /* WhatsApp green */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .contact-button:hover {
+    background-color: #128c7e; /* Darker WhatsApp green */
+  }
+  
+  /* Responsive Styles */
+  
+  /* Laptop and Desktop View (Flex with side-by-side layout) */
+  @media (min-width: 768px) {
+    .poster-container {
+      flex-direction: row; /* Align content horizontally */
+      justify-content: flex-start; /* Align to the left */
+    }
+  
+    /* Image stays on the left, takes up 40% of the width */
+    .poster-image {
+      width: 40%; /* Image on left */
+      margin-right: 20px; /* Space between image and content */
+    }
+  
+    /* Content container takes up 60% of the width on larger screens */
+    .content-container {
+      width: 60%; /* Content on the right */
+      margin-top: 0; /* Remove extra margin on top */
+    }
+  
+    /* Ensures sections inside content-container are stacked vertically */
+    .dance-section, .contact-info {
+      width: 100%;
+      margin-bottom: 20px; /* Space between sections */
+    }
+  }
+  
+  /* Mobile Specific Styles (Everything Stacks Vertically) */
+  @media (max-width: 767px) {
+    .poster-container {
+      flex-direction: column; /* Stack everything vertically */
+    }
+  
+    .poster-image {
+      width: 100%; /* Full width image */
+      margin-bottom: 20px; /* Space below image */
+    }
+  
+    .content-container {
+      width: 100%; /* Full width for content */
+    }
+  
+    .dance-section, .contact-info {
+      width: 100%; /* Ensure full width on mobile */
+      margin-top: 20px; /* Spacing between sections */
+    }
+  }
+  
